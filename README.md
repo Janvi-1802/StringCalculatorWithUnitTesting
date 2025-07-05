@@ -63,6 +63,14 @@ Input: "-1,-2,-3,4"   Output:Negative numbers not allowed -1,-2,-2
 
 ![image](https://github.com/user-attachments/assets/44fdaa21-864f-4e36-bd83-25a0f6b5a922)
 
+Extra.....
+
+Step 6 : using TDD ,add a method to stringCalculator called public int getCalledCount() that retuns how many times Add() was invoked.
+
+![image](https://github.com/user-attachments/assets/6c69bace-b551-46d2-887c-08401e6fcb00)
+
+![image](https://github.com/user-attachments/assets/ee343b0d-e6bf-49dc-8dcb-3d42099ee7fa)
+
 
 Extra Observations 
 
