@@ -77,6 +77,12 @@ Step 7: Number bigger than 1000 should be ignored.
 
 ![image](https://github.com/user-attachments/assets/e92e5d55-d76b-4f83-a855-4d001405a47b)
 
+Step 8: delimiters can be of any length.
+
+![image](https://github.com/user-attachments/assets/2e53a333-46f6-4f1c-9ce4-fdbe24845a3c)
+
+![image](https://github.com/user-attachments/assets/d65347b8-6ff9-4bcc-9831-1491379080c8)
+
 
 
 Extra Observations 
