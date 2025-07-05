@@ -1,5 +1,7 @@
 # StringCalculatorWithUnitTesting
 
+Brief Discription: String Calculator with different separators to separate the numbers and calculating sum of that. Also the functionalities are tested by performing unit testing using JUNIT5. 
+
 1): Setup TDD environment , by adding JUNIT 5 dependencies using mvn. 
 
  Created a class StringCalculator that has method add. 
