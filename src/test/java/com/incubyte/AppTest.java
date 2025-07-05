@@ -34,6 +34,15 @@ public class AppTest {
         assertEquals(74489,result);
     }
 
+    @Test
+    //Support \n as a separtor
+    public void NewLineSeparatedNumberSum()
+    {
+        StringCalculator calculator=new StringCalculator();
+        int result=calculator.add("1\n2,3");
+        assertEquals(6,result);
+    }
+
 
 }
 

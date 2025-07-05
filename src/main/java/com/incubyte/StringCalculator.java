@@ -8,13 +8,16 @@ public class StringCalculator
         if(numbers.isEmpty())
             return 0;
 
-        //To handle comma separated number string 
-        String[] parts=numbers.split(",");
+        //both newline and comma is supported as a separator
+        String separator="[,\n]";
+        
+        String[] NumbersSeparatedByNewLine = numbers.split(separator);
         int sum=0;
-        for(String part:parts)
+        for(String number:NumbersSeparatedByNewLine)
         {
-            sum+= Integer.parseInt(part.trim());
+            sum+= Integer.parseInt(number.trim());
         }
         return sum;
+       
     }
 }
