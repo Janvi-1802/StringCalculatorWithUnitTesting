@@ -49,7 +49,9 @@ public class StringCalculator
             }
             else 
             {
-                sum+= num;
+                //ignore number which are greater than 1000
+                if(num<1000)
+                    sum+= num;
             }
         }
         if(! negativeNumber.isEmpty())

@@ -43,7 +43,8 @@ public class AppTest {
     {
          StringCalculator calculator=new StringCalculator();
         int result=calculator.add("1,2,3,4,5,6,7,8,9,12,34,56,78,23,67890,3421,566,32,1111,777,444");
-        assertEquals(74489,result);
+        //as we have the feature that number which are greater than 1000 are ignored. that's why sum is 2067.
+        assertEquals(2067,result);
     }
 
     @Test
@@ -86,6 +87,15 @@ public class AppTest {
         calculator.add("//;,*\n1;2*3");
         int result=calculator.GetCalledCount();
         assertEquals(3,result);
+    }
+
+    @Test 
+    //Number greater than 1000 should be ignored
+    public void GreaterThan1000ShouldBeIgnored()
+    {
+        StringCalculator calculator=new StringCalculator();
+        int result=calculator.add("1,2,3,5678,23,11,225677");
+        assertEquals(40,result);
     }
 
 
