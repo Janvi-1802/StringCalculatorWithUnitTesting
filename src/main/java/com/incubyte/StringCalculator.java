@@ -1,4 +1,7 @@
 package com.incubyte;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class StringCalculator 
 {
@@ -25,10 +28,25 @@ public class StringCalculator
             numbers=numbers.substring(IndexOfSubstring+1,numbers.length());
         }
         String[] Numbers= numbers.split(delimeters);
+        
+        List <Integer> negativeNumber= new ArrayList<>();
         int sum=0;
         for(String number:Numbers)
         {
-            sum+= Integer.parseInt(number.trim());
+            int num=Integer.parseInt(number.trim());
+            if(num<0)
+            {
+                negativeNumber.add(num);
+            }
+            else 
+            {
+                sum+= num;
+            }
+        }
+        if(! negativeNumber.isEmpty())
+        {
+            //we have negative numbers 
+            throw new IllegalArgumentException("Negative numbers not allowed "+negativeNumber.stream().map(String::valueOf).collect(Collectors.joining(",")));
         }
         return sum;
        
