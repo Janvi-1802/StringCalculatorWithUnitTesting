@@ -47,6 +47,13 @@ Testcase: 4->Input: "1\n2,3" Output: 6
    
    ![image](https://github.com/user-attachments/assets/36a62161-610f-4e75-bd31-ce960f453244)
 
+Step 4: Support different delimiters:
+
+Testcase : Input: "//;,\n1;2,3"    Output:6 
+
+![image](https://github.com/user-attachments/assets/c240a0aa-0efb-4110-8507-557ea0571aba)
+
+![image](https://github.com/user-attachments/assets/36db037f-c837-4b67-b173-37fc21615159)
 
 Extra Observations 
 
