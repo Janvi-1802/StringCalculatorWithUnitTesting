@@ -71,6 +71,13 @@ Step 6 : using TDD ,add a method to stringCalculator called public int getCalled
 
 ![image](https://github.com/user-attachments/assets/ee343b0d-e6bf-49dc-8dcb-3d42099ee7fa)
 
+Step 7: Number bigger than 1000 should be ignored.
+
+![image](https://github.com/user-attachments/assets/a3de7bbe-04b2-4d74-b263-6a2efa5a04e0)
+
+![image](https://github.com/user-attachments/assets/e92e5d55-d76b-4f83-a855-4d001405a47b)
+
+
 
 Extra Observations 
 
