@@ -25,6 +25,15 @@ public class AppTest {
         assertEquals(6,result);
     }
 
+    @Test 
+    //checking for too many numbers 
+    public void TooManyNumbersSum()
+    {
+         StringCalculator calculator=new StringCalculator();
+        int result=calculator.add("1,2,3,4,5,6,7,8,9,12,34,56,78,23,67890,3421,566,32,1111,777,444");
+        assertEquals(74489,result);
+    }
+
 
 }
 
