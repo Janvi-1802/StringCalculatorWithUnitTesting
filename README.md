@@ -90,6 +90,13 @@ Step 9: Allow multiple delimiters
 
 ![image](https://github.com/user-attachments/assets/4a82612e-9325-4db4-8c45-da5282baf88d)
 
+Step 10: Multiple delimiter of length greater than 1
+
+![image](https://github.com/user-attachments/assets/74b6fa87-a1ed-422b-8809-f6e3ffb98d2b)
+
+![image](https://github.com/user-attachments/assets/65fbc0e0-1ed1-4501-a999-2dc5820ce517)
+
+
 core logic of StringCalculator 
 
 ![image](https://github.com/user-attachments/assets/ca51f2e9-74e8-45d6-966a-cb702b2f9abb)
