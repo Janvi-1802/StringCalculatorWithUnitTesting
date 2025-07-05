@@ -107,6 +107,14 @@ public class AppTest {
         assertEquals(6,result);
     }
 
+    @Test
+    //multiple delimiters
+    public void CheckMultipleDelimitersSum()
+    {
+        StringCalculator calculator=new StringCalculator();
+        int result=calculator.add("//[*][%]\n1*2%3");
+        assertEquals(6,result);
+    }
 
 }
 

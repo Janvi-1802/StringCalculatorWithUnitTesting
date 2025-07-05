@@ -2,6 +2,8 @@ package com.incubyte;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class StringCalculator 
 {
@@ -32,14 +34,17 @@ public class StringCalculator
        if (numbers.startsWith("//"))
         {
             String delimiterStr = numbers.substring(2, IndexOfSubstring);
-
             
             if (delimiterStr.startsWith("[") && delimiterStr.endsWith("]"))
             {
-                // Support [***] or any multi-character delimiter
-                    delimiterStr = delimiterStr.substring(1, delimiterStr.length() - 1);
-                    delimiterStr = java.util.regex.Pattern.quote(delimiterStr);
-                    delimiters = delimiterStr;
+                   Matcher matcher=Pattern.compile("\\[(.*?)]").matcher(delimiterStr);
+                   List<String>delimitersList=new ArrayList<>();
+                   while(matcher.find())
+                   {
+                    delimitersList.add(Pattern.quote(matcher.group(1)));
+                   }
+              
+                  delimiters=String.join("|",delimitersList);
             }
             else 
             {
