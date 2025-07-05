@@ -30,20 +30,24 @@ public class StringCalculator
        //for the normal case where numbers are separated by comma and \n. 
        String delimiters="[,\n]";
 
-     //  support deferent delimiters-> we know that delimiters are between // and \n if it have multiple delimeters
+     //  support deferent delimiters-> we know that delimiters are between // and \n if it have multiple delimiters
        if (numbers.startsWith("//"))
         {
+            
             String delimiterStr = numbers.substring(2, IndexOfSubstring);
             
             if (delimiterStr.startsWith("[") && delimiterStr.endsWith("]"))
             {
+                   //extract all the separators from the delimiterStr using regex"\\[(.*?)]"
                    Matcher matcher=Pattern.compile("\\[(.*?)]").matcher(delimiterStr);
                    List<String>delimitersList=new ArrayList<>();
                    while(matcher.find())
                    {
+                    //add each separator into the list.
                     delimitersList.add(Pattern.quote(matcher.group(1)));
                    }
               
+                  // do or of all the separator. 
                   delimiters=String.join("|",delimitersList);
             }
             else 

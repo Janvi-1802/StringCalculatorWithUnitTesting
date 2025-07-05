@@ -115,7 +115,15 @@ public class AppTest {
         int result=calculator.add("//[*][%]\n1*2%3");
         assertEquals(6,result);
     }
-
+    
+    @Test
+    //multiple delimiter of length greater than 1
+    public void MultipleDelimiterWithLengthGreaterThanOne()
+    {
+        StringCalculator calculator=new StringCalculator();
+        int result=calculator.add("//[**][%%]\n1**2%%3");
+        assertEquals(6,result);
+    }
 }
 
 
