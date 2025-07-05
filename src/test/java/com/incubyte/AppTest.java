@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class AppTest {
 
-    StringCalculator calculator=new StringCalculator();
+    
 
     @Test
     //check for testcase input: "" empty string 
@@ -68,11 +68,24 @@ public class AppTest {
     //handle negative number by providing exception message
     public void HandleNegativeNumber()
     {
+        StringCalculator calculator=new StringCalculator();
        Exception exception = assertThrows(IllegalArgumentException.class, ()->{
         calculator.add("-1,-2,-3,4");
        });
 
        assertTrue(exception.getMessage().contains("Negative numbers not allowed -1,-2,-3"));
+    }
+
+    @Test
+    // to test how many times add is called
+    public void HowManyTimesAddCalled()
+    {
+        StringCalculator calculator=new StringCalculator();
+        calculator.add("1,2,3");
+        calculator.add("1\n2");
+        calculator.add("//;,*\n1;2*3");
+        int result=calculator.GetCalledCount();
+        assertEquals(3,result);
     }
 
 

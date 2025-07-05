@@ -5,8 +5,17 @@ import java.util.stream.Collectors;
 
 public class StringCalculator 
 {
+    //if we want to count for the add method for all instances then this should be static
+    //but here i am assuming that i want to count per instance how many times add called, so i used non-static variable
+     int count=0;
+    
+    public int GetCalledCount()
+    {
+        return this.count;
+    }
     public int add(String numbers)
     {
+        this.count++;
         //For removing leading white space  
         numbers=numbers.trim();
 
@@ -28,7 +37,7 @@ public class StringCalculator
             numbers=numbers.substring(IndexOfSubstring+1,numbers.length());
         }
         String[] Numbers= numbers.split(delimeters);
-        
+
         List <Integer> negativeNumber= new ArrayList<>();
         int sum=0;
         for(String number:Numbers)
