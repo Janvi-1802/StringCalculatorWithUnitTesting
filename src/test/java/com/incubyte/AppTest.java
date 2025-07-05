@@ -14,6 +14,15 @@ public class AppTest {
         int result=calculator.add("");
         assertEquals(0,result);
     }
+    @Test 
+    //For leading white space Input: "          "
+                        //    Output: 0
+    public void LeadingWhiteSpace()
+    {
+        StringCalculator calculator=new StringCalculator();
+        int result=calculator.add("        ");
+        assertEquals(0,result);
+    }
 
     @Test 
     //check for testcase input :"1" output: 1
@@ -40,6 +49,15 @@ public class AppTest {
     {
         StringCalculator calculator=new StringCalculator();
         int result=calculator.add("1\n2,3");
+        assertEquals(6,result);
+    }
+
+    @Test
+    //support multiple delimeters 
+    public void MultipleDelimeters()
+    {
+        StringCalculator calculator=new StringCalculator();
+        int result=calculator.add("//;,\n1;2,3");
         assertEquals(6,result);
     }
 
