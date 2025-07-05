@@ -13,7 +13,8 @@
   Testcase: 1 -> empty string  - Input: ""  Output: 0
 
   ![Screenshot 2025-07-05 110251](https://github.com/user-attachments/assets/8c91af8a-e375-470a-b2c0-35ab8f97662e)
-    ![image](https://github.com/user-attachments/assets/3f9a6fb0-75a3-4db7-905f-4c5165fc555f)
+  
+   ![image](https://github.com/user-attachments/assets/3f9a6fb0-75a3-4db7-905f-4c5165fc555f)
 
   Testcase: 2 -> comma separated numbers given as a string 
   
@@ -24,12 +25,30 @@
 
 Step 2: Allow the add method to handle any amount of numbers.
 
-Testcase : 1 -> too many numbers 
+Testcase : 1 ->  input: "1,2,3,4,5,6,7,8,9,12,34,56,78,23,67890,3421,566,32,1111,777,444"
+Ouput: 74489
 
 {needed because, sometimes it is possible that code is prefectly working for small inputs but failes for large input}
 ![image](https://github.com/user-attachments/assets/2405c7b0-745e-476b-b183-d4f670ab3fe3)
+
 ![image](https://github.com/user-attachments/assets/8dff73db-a119-48da-ae30-06138a7b4f5d)
 
+Step 3: Allow the add method to handle new lines between numbers.
+
+Testcase: 1-> Input: "" Output:0 
+
+Testcase: 2-> Input: "1,2,3" Output:6
+  
+Testcase: 3-> Input: "1,2,3,4,5,6,7,8,9,12,34,56,78,23,67890,3421,566,32,1111,777,444"  Ouput: 74489
+          
+Testcase: 4->Input: "1\n2,3" Output: 6
+
+   ![image](https://github.com/user-attachments/assets/86206a5d-ce64-44d5-acbb-38c428fcaa34)
+   
+   ![image](https://github.com/user-attachments/assets/36a62161-610f-4e75-bd31-ce960f453244)
+
+
+          
 
 
 
