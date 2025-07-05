@@ -55,6 +55,15 @@ Testcase : Input: "//;,\n1;2,3"    Output:6
 
 ![image](https://github.com/user-attachments/assets/36db037f-c837-4b67-b173-37fc21615159)
 
+Step 5: Calling add with a negative number will throw an exception. 
+
+Input: "-1,-2,-3,4"   Output:Negative numbers not allowed -1,-2,-2
+![image](https://github.com/user-attachments/assets/fb855554-1c40-4a75-9bff-db477ec6bb24)
+
+
+![image](https://github.com/user-attachments/assets/44fdaa21-864f-4e36-bd83-25a0f6b5a922)
+
+
 Extra Observations 
 
 1. Removing extra leading whitespaces
