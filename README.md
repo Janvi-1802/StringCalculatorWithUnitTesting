@@ -83,6 +83,16 @@ Step 8: delimiters can be of any length.
 
 ![image](https://github.com/user-attachments/assets/d65347b8-6ff9-4bcc-9831-1491379080c8)
 
+Step 9: Allow multiple delimiters 
+
+![image](https://github.com/user-attachments/assets/7b48969e-4ba1-4221-aaa1-948d008e8e2e)
+
+
+![image](https://github.com/user-attachments/assets/4a82612e-9325-4db4-8c45-da5282baf88d)
+
+core logic of StringCalculator 
+
+![image](https://github.com/user-attachments/assets/ca51f2e9-74e8-45d6-966a-cb702b2f9abb)
 
 
 Extra Observations 
