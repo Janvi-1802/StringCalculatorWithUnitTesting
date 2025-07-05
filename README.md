@@ -48,6 +48,16 @@ Testcase: 4->Input: "1\n2,3" Output: 6
    ![image](https://github.com/user-attachments/assets/36a62161-610f-4e75-bd31-ce960f453244)
 
 
+Extra Observations 
+
+1. Removing extra leading whitespaces
+   
+   ![image](https://github.com/user-attachments/assets/b6c00242-8aca-4985-b9e0-68ec1de97640)
+
+   ![image](https://github.com/user-attachments/assets/b253c20e-9273-463f-ae5d-ad72bf2c22b5)
+
+
+
           
 
 
