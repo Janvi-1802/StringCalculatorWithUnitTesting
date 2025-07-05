@@ -48,7 +48,7 @@ public class AppTest {
     }
 
     @Test
-    //Support \n as a separtor
+    //Support \n as a separator
     public void NewLineSeparatedNumberSum()
     {
         StringCalculator calculator=new StringCalculator();
@@ -57,8 +57,8 @@ public class AppTest {
     }
 
     @Test
-    //support multiple delimeters 
-    public void MultipleDelimeters()
+    //support multiple delimiters 
+    public void MultipleDelimiters()
     {
         StringCalculator calculator=new StringCalculator();
         int result=calculator.add("//;,\n1;2,3");
@@ -96,6 +96,15 @@ public class AppTest {
         StringCalculator calculator=new StringCalculator();
         int result=calculator.add("1,2,3,5678,23,11,225677");
         assertEquals(40,result);
+    }
+
+    @Test
+    //delimiters can be of any length
+    public void delimitersCanBeOfAnyLength()
+    {
+        StringCalculator calculator=new StringCalculator();
+        int result=calculator.add("//[***]\n1***2***3");
+        assertEquals(6,result);
     }
 
 

@@ -26,18 +26,32 @@ public class StringCalculator
        String substring ="\n";
        int IndexOfSubstring=numbers.indexOf(substring);
        //for the normal case where numbers are separated by comma and \n. 
-       String delimeters="[,\n]";
+       String delimiters="[,\n]";
 
-       //support deferent delimeters-> we know that delimeters are between // and \n if it have multiple delimeters
-       if(numbers.charAt(0)=='/' && numbers.charAt(1)=='/')
-       {
-            delimeters='['+numbers.substring(2,IndexOfSubstring)+']';
+     //  support deferent delimiters-> we know that delimiters are between // and \n if it have multiple delimeters
+       if (numbers.startsWith("//"))
+        {
+            String delimiterStr = numbers.substring(2, IndexOfSubstring);
+
             
-            //extract the numbers from the input string. 
-            numbers=numbers.substring(IndexOfSubstring+1,numbers.length());
-        }
-        String[] Numbers= numbers.split(delimeters);
+            if (delimiterStr.startsWith("[") && delimiterStr.endsWith("]"))
+            {
+                // Support [***] or any multi-character delimiter
+                    delimiterStr = delimiterStr.substring(1, delimiterStr.length() - 1);
+                    delimiterStr = java.util.regex.Pattern.quote(delimiterStr);
+                    delimiters = delimiterStr;
+            }
+            else 
+            {
+                delimiters='['+delimiterStr+']';
+             }
+         numbers = numbers.substring(IndexOfSubstring + 1);
 
+        }
+    
+
+        String[] Numbers= numbers.split(delimiters);
+      
         List <Integer> negativeNumber= new ArrayList<>();
         int sum=0;
         for(String number:Numbers)
